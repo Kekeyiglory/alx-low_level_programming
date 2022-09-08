@@ -5,7 +5,7 @@
  *
  * Return: Always 0 (As successful)
  */
-init main(void)
+int main(void)
 {
 	char a;
 	int b;

@@ -5,8 +5,8 @@
  *
  * Return: Always 0 (It is a success)
  */
-int main(v0id)
+int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");
+	puts("\"programming is like building a multilingual puzzle"
 	return (0);
 }
