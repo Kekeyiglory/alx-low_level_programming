@@ -5,7 +5,7 @@
  * main - Print random number to variable
  *
  * Return: Always (Successful)
- * */
+ **/
 int main(void)
 {
 	int n;
