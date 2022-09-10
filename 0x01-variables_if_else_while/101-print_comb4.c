@@ -1,33 +1,34 @@
 #include <stdio.h>
 
 /**
- * main - print possible combo of three
+ * main - Prints three combination of numbers
  *
- * Return: returns zero at the end
+ * Return: Always (Success)
  */
 int main(void)
 {
-	int i, p, m;
+	int c, i, k;
 
-	for (i = 0; i <= 9; i++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		for (p = 1; p <= 9; p++)
+		for (i = '0'; i <= '9'; i++)
 		{
-			for (m = 2; m <= 9; m++)
+			for (k = '0'; k <= '9'; k++)
 			{
-			if (m > p && p > i)
-			{
-				putchar(i + '0');
-				putchar(p + '0');
-				putchar(m + '0');
-				        if (i != 7)
-			        {
-					putchar(',');
-					putchar(' ');
+				if (c < i && i < k)
+				{
+					putchar(c);
+					putchar(i);
+					putchar(k);
+
+					if (c != '7')
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
-			}
-	        }
+		}
 	}
 	putchar('\n');
 	return (0);
