@@ -3,7 +3,7 @@
 /**
  * main - lowercase and uppercase
  *
- * Returrn: Always (Successful)
+ * Return: Always (Success/correct)
  */
 int main(void)
 {
