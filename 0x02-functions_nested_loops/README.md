@@ -1,1 +1,1 @@
-My c Function readme
+My C function readme
