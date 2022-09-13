@@ -1,1 +1,1 @@
-C is fun
+My c Function readme
