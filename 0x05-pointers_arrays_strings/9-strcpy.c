@@ -1,29 +1,23 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include "main.h"
 
 /**
- * main- genrate password
- * Return:nothing
+ * _strcpy - Copy paste string
+ * @dest: destination
+ * @src: source
+ *
+ * Return: destination
  */
-int main(void)
+
+char *_strcpy(char *dest, char *src)
 {
-	srand((unsigned int)time(NULL));
-	char pass[13];
-	int i;
+	int inc = 0;
 
-
-	for (i = 0; i < 4; i++)
+	while (*(src + inc) != '\0')
 	{
-
-		pass[3 * i] = '0' + (rand() % 10);
-		char letter = 'a' + (rand() % 26);
-
-		pass[(3 * i) + 2] = letter;
+		*(dest + inc) = *(src + inc);
+		inc++;
 	}
-	pass[3 * i] = '\0';
-	printf("generated password : %s\n\n", pass);
+	*(dest + inc) = '\0';
 
-	printf("\n\n");
-	return (0);
+	return (dest);
 }
