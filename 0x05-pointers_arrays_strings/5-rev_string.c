@@ -1,27 +1,28 @@
 #include "main.h"
 
 /**
- * rev_string - function for reversing a string
- * @s: pointer string
+ * rev_string - rev string
+ * @s: string
  */
+
 void rev_string(char *s)
 {
-	char tmp;
-	int i, length1, length2;
+	char *t = s;
+	char n[1000];
+	short c = 0;
 
-	length 1 = 0;
-	length 2 = 0;
-
-	while (s[length 1] != '\0')
-		length1++;
-
-	length 2 = length 1 - 1;
-	for (i = 0; i < length1 / 2; i++)
+	while (*s != '\0')
 	{
-		"samalx_xlamas"
-		tmp = s[i];
-		s[i] = s[length2];
-		s[length2] = tmp;
-		length2 -= 1;
+		n[c] = *s;
+		s++;
+		c++;
+	}
+	c = 0;
+
+	while (s > t)
+	{
+		s--;
+		*s = n[c];
+		c++;
 	}
 }
