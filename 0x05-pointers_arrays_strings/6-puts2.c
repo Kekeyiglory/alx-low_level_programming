@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * puts - print every character of a string
+ * puts2 - print every character of a string
  *
  * @str: string parameter input
  *
  * Return: Nothing
  */
+
 void puts2(char *str)
 {
 	int i;
