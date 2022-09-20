@@ -7,7 +7,6 @@
  *
  * Return: Nothing
  */
-
 void puts2(char *str)
 {
 	int i;
