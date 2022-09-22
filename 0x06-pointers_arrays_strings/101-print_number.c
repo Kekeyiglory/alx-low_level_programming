@@ -2,25 +2,34 @@
 
 /**
  * print_number - prints an integer.
- * @n: input integer to be printed.
- * Return: no return.
+ * @n: input integer.
+ * Return: void.
  */
-
 void print_number(int n)
 {
-	unsigned int n1;
-
-	n1 = n;
+	unsigned int a, b, c;
 
 	if (n < 0)
 	{
-		_putchar('-');
-		n1 = -n;
+		_putchar(45);
+		a = n * -1;
+	}
+	else
+	{
+		a = n;
 	}
 
-	if (n1 / 10 != 0)
+	b = a;
+	c = 1;
+
+	while (b > 9)
 	{
-		print_number(n1 / 10);
+		b /= 10;
+		c *= 10;
 	}
-	_putchar((n1 % 10) + '0');
+
+	for (; c >= 1; c /= 10)
+	{
+		_putchar(((a / c) % 10) + 48);
+	}
 }
