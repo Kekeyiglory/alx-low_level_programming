@@ -32,4 +32,5 @@ void print_number(int n)
 	{
 		_putchar(((a / c) % 10) + 48);
 	}
+	return (0);
 }
