@@ -6,7 +6,7 @@
  * compile it again.
  * You should not remove the path before the name of the program.
  *
- * @argc: This is the argument count 
+ * @argc: This is the argument count
  * @argv: This is the argument vector
  *
  * Return: Always 0
