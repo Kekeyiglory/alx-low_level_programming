@@ -5,6 +5,7 @@
  * main - program that prints the minimum number of coins.
  *
  * @args: parameter entry
+ *
  * @argv: This is the argument vector
  *
  * Return: return 0
@@ -19,6 +20,7 @@ int main(int args, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
+
 	c = atoi(argv[1]);
 	if (c < 0)
 	{
@@ -41,8 +43,10 @@ int main(int args, char *argv[])
 
 		else if (c >= 1)
 			c -= 1;
+
 		else
 			break;
+
 		coins += 1;
 	}
 	printf("%d\n");
